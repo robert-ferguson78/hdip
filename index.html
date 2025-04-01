@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDIP Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .bio-container {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            align-items: center;
+        }
+        
+        .bio-image {
+            flex: 0 0 200px;
+            margin-right: 30px;
+        }
+        
+        .bio-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+        }
+        
+        .bio-content {
+            flex: 1;
+        }
+        
+        .bio-content h1 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .bio-content p {
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .bio-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .bio-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bio Section with Circle Image -->
+        <section class="bio-container">
+            <div class="bio-image">
+                <img src="https://via.placeholder.com/200" alt="Profile Picture">
+            </div>
+            <div class="bio-content">
+                <h1>Welcome to Enviro Buddy 2.0</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Cards Section (2x2 Grid) -->
+        <section class="cards-container">
+            <!-- Card 1: Video Demo -->
+            <div class="card">
+                <h2>Video Demo</h2>
+                <p>
+                    View video demo of Enviro Buddy 2.0 in action.
+                </p>
+            </div>
+            
+            <!-- Card 2: GitHub -->
+            <div class="card">
+                <h2>GitHub</h2>
+                <p>
+                    GitHub repository of the Enviro Buddy 2.0 project.
+                </p>
+            </div>
+            
+            <!-- Card 3: Project Planning -->
+            <div class="card">
+                <h2>Project Planning / Managment</h2>
+                <p>
+                    <a href="/project-planning.pdf" target="_blank">View PDF of Zoho Projects Tasks</a>
+                </p>
+            </div>
+            
+            <!-- Card 4: Report -->
+            <div class="card">
+                <h2>Report</h2>
+                <p>
+                    Project report of Enviro Buddy 2.0
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
